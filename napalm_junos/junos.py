@@ -880,6 +880,7 @@ class JunOSDriver(NetworkDriver):
             'local_address': py23_compat.text_type,
             'local_as': int,
             'remote_as': int,
+            'authentication_key': py23_compat.text_type,
             'import_policy': py23_compat.text_type,
             'export_policy': py23_compat.text_type,
             'inet_unicast_limit_prefix_limit': int,
@@ -901,7 +902,6 @@ class JunOSDriver(NetworkDriver):
         }
 
         _PEER_FIELDS_DATATYPE_MAP_ = {
-            'authentication_key': py23_compat.text_type,
             'route_reflector_client': bool,
             'nhs': bool
         }
